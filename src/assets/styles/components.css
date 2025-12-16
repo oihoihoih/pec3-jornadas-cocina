@@ -8,6 +8,6 @@
     }
 
     .blockquote {
-        @apply border-l-4 border-regular pl-4 min-w-[15ch] flex flex-col gap-2;
+        @apply border-l-4 border-regular pl-4 min-w-[15ch] flex flex-col gap-4;
     }
 }
