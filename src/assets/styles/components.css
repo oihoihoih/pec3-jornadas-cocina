@@ -1,0 +1,13 @@
+@layer components {
+    .blog-post__hero {
+        @apply flex justify-center items-center relative w-full h-[50cqb]
+    }
+
+    .blog-post__heading {
+        @apply text-5xl font-black uppercase text-regular leading-10 tracking-tighter ;
+    }
+
+    .blockquote {
+        @apply border-l-4 border-regular pl-4 min-w-[15ch] flex flex-col gap-2;
+    }
+}

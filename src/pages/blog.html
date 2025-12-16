@@ -15,28 +15,27 @@
     <title>Fogonazo! Blog</title>
   </head>
 
-  <body>
-    <main class="bg-xlight">
-        <!-- TODO: Poner este título como invisible -->
-      <h1>Blog</h1>
-      <article class="flex flex-col gap-[2cqi] mx-auto p-2 @container/blog-post container">
-        <!-- TODO: Usar apply y crear componente Imagen hero -->
-        <div>
+  <body >
+    <main class="bg-xlight text-black">
+      <h1 class="invisible">Blog</h1>
+      <article class="w-full flex flex-col gap-[2cqi] ">
+        <div class="blog-post__hero">
           <!-- Imagen hero -->
           <!-- Foto de Sébastien Vincon: https://www.pexels.com/es-es/foto/campo-agricultura-animales-pradera-9896919/ -->
           <img
             src="../assets/images/prado.jpg"
             alt="Un prado con ovejas y montañas al fondo"
+            class="object-cover block w-full h-full"
           />
-          <div class="blog-post__header">
-            <h2>La esencia de la cocina tradicional vasca</h2>
-            <p>Por Fogonazo! Redacción</p>
+          <div class="text-center absolute max-w-2/3">
+            <h2 class="blog-post__heading">La esencia de la cocina tradicional vasca</h2>
+            <p class="text-regular">Por Fogonazo! Redacción</p>
           </div>
         </div>
 
         <div class="flex flex-col md:flex-row gap-[1cqi] max-w-[65ch] mx-auto">
-          <figure>
-            <blockquote>
+          <figure class="blockquote">
+            <blockquote class="text-xl leading-6 font-normal">
               <p>
                 La cocina vasca no es solo una manera de comer, es una forma de
                 vivir, de entender el paisaje y la sociedad.
@@ -117,8 +116,8 @@
         </div>
 
         <div class="max-w-[65ch] mx-auto">
-          <figure>
-            <blockquote>
+          <figure class="blockquote">
+            <blockquote class="text-xl leading-6 font-normal">
               <p>
                 Mi abuela nos transmitió el valor de la cocina tradicional. La
                 recuerdo siempre cocinando con amor y dedicación. Especialmente
@@ -144,27 +143,34 @@
           </p>
         </div>
 
-        <!-- Aquí imagen con Carrusel de Bootstrap -->
+        <!-- CAROUSEL -->
+         <!-- TODO: Carousel. Ejemplo: https://www.wander.com -->
         <div class="w-full @md/blog-post:w-[95cqi] mx-auto">
           <div>
-            <div>
+
+            <div class="overflow-hidden">
               <img
                 src="../assets/images/carrousel-1.jpg"
                 alt="Vista de pequeño pueblo costero con montañas al fondo"
+                class="object-cover"
               />
               <!-- Foto de David Vives: https://www.pexels.com/es-es/foto/mar-ciudad-casas-agua-10473372/ -->
             </div>
-            <div>
+
+            <div class="overflow-hidden">
               <img
                 src="../assets/images/carrousel-2.jpg"
                 alt="Vista de un pequeño pueblo en medio de verdes prados"
+                class="object-cover"
               />
               <!-- Foto de SlimMars 13: https://www.pexels.com/es-es/foto/paisaje-casas-pueblo-edificios-24536586/ -->
             </div>
-            <div>
+
+            <div class="overflow-hidden">
               <img
                 src="../assets/images/carrousel-3.jpg"
                 alt="Vista de barricas de madera en una bodega"
+                class="object-cover"
               />
               <!-- Foto de Michel Meuleman: https://www.pexels.com/es-es/foto/botellas-de-madera-fondo-de-pantalla-sotano-5690802/ -->
             </div>
