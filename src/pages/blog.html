@@ -1,11 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Blog</h1>
-</body>
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>Fogonazo! Blog</title>
+  </head>
+
+  <body>
+    <main class="bg-xlight">
+        <!-- TODO: Poner este título como invisible -->
+      <h1>Blog</h1>
+      <article class="flex flex-col gap-[2cqi] items-center p-2">
+        <!-- TODO: Usar apply y crear componente Imagen hero -->
+        <div>
+          <!-- Imagen hero -->
+          <!-- Foto de Sébastien Vincon: https://www.pexels.com/es-es/foto/campo-agricultura-animales-pradera-9896919/ -->
+          <img
+            src="../assets/images/prado.jpg"
+            alt="Un prado con ovejas y montañas al fondo"
+          />
+          <div class="blog-post__header">
+            <h2>La esencia de la cocina tradicional vasca</h2>
+            <p>Por Fogonazo! Redacción</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-[1cqi] max-w-[65ch]">
+          <figure>
+            <blockquote>
+              <p>
+                La cocina vasca no es solo una manera de comer, es una forma de
+                vivir, de entender el paisaje y la sociedad.
+              </p>
+            </blockquote>
+            <figcaption>
+              Iker Etxeberria
+              <cite title="Libro publicado en 2024 por la editorial Euskarri"
+                >La cocina en los caseríos</cite
+              >
+            </figcaption>
+          </figure>
+
+          <p>
+            La cocina tradicional del País Vasco es reconocida por la calidad de
+            sus productos, el respeto por la materia prima y la sencillez de sus
+            elaboraciones. Basada en producto de temporada y en una relación
+            estrecha con el mar y la montaña, esta gastronomía representa la
+            identidad de todo un pueblo. Es una cocina que prescinde de
+            artificios y se centra en resaltar los sabores naturales de los
+            ingredientes.
+          </p>
+        </div>
+
+        <div class="max-w-[65ch]">
+          <p>
+            Desde los puertos pesqueros del Cantábrico hasta los caseríos del
+            interior, la tradición culinaria vasca se ha transmitido de
+            generación tras generación. Hoy en día esta cocina sigue viva,
+            combinando técnicas ancestrales con innovaciones modernas sin perder
+            su esencia.
+          </p>
+        </div>
+
+        <div class="max-w-[65ch] border-y border-grey py-4">
+          <dl class="flex flex-col gap-[2cqi]">
+            <dt class="grid grid-cols-12">
+              <span class="border w-6 h-6 rounded-full flex items-center justify-center">1</span>
+              <h5 class="col-span-11">El producto</h5>
+            </dt>
+            <dd class="grid grid-cols-12">
+              <p class="col-span-11 col-start-2">
+                La base de la cocina vasca es el respeto absoluto por el
+                producto. Pescados frescos como el bacalao, el bonito del norte
+                o la merluza, junto con verduras de la huerta y carnes de
+                calidad, son los auténticos protagonistas de sus platos.
+              </p>
+            </dd>
+
+            <dt class="grid grid-cols-12">
+              <span class="border w-6 h-6 rounded-full flex items-center justify-center">2</span>
+              <h5 class="col-span-11">
+                Las recetas tradicionales
+              </h5>
+            </dt>
+            <dd class="grid grid-cols-12">
+              <p class="col-span-11 col-start-2">
+                Platos como el bacalao al pil-pil, la marmitako, los chipirones
+                en su tinta o el chuletón a la brasa representan a la perfección
+                una cocina sencilla en apariencia, pero llena de técnica y
+                sabor.
+              </p>
+            </dd>
+
+            <dt class="grid grid-cols-12">
+              <span class="border w-6 h-6 rounded-full flex items-center justify-center">3</span>
+              <h5 class="col-span-11">La cultura del comer</h5>
+            </dt>
+            <dd class="grid grid-cols-12">
+              <p class="col-span-11 col-start-2">
+                La gastronomía en el País Vasco es un acto social. Las
+                sociedades gastronómicas, los bares de pintxos y las comidas
+                familiares son el reflejo de una cultura que gira en torno a la
+                mesa.
+              </p>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="max-w-[65ch]">
+          <figure>
+            <blockquote>
+              <p>
+                Mi abuela nos transmitió el valor de la cocina tradicional. La
+                recuerdo siempre cocinando con amor y dedicación. Especialmente
+                picando cebolla y pochándola lentamente. Creo que era el secreto
+                de todos sus guisos
+              </p>
+            </blockquote>
+            <figcaption>
+              Iker Etxeberria
+              <cite title="Libro publicado en 2024 por la editorial Euskarri"
+                >La cocina en los caseríos</cite
+              >
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="max-w-[65ch]">
+          <p>
+            Acompañando muchos de estos platos encontramos vinos como el
+            txakoli, sidras naturales y quesos como el Idiazabal. La cocina
+            vasca tradicional sigue hoy más viva que nunca, adaptándose a los
+            nuevos tiempos sin perder sus raíces.
+          </p>
+        </div>
+
+        <!-- Aquí imagen con Carrusel de Bootstrap -->
+        <div>
+          <div>
+            <div>
+              <img
+                src="#"
+                alt="Vista de pequeño pueblo costero con montañas al fondo"
+              />
+              <!-- Foto de David Vives: https://www.pexels.com/es-es/foto/mar-ciudad-casas-agua-10473372/ -->
+            </div>
+            <div>
+              <img
+                src="#"
+                alt="Vista de un pequeño pueblo en medio de verdes prados"
+              />
+              <!-- Foto de SlimMars 13: https://www.pexels.com/es-es/foto/paisaje-casas-pueblo-edificios-24536586/ -->
+            </div>
+            <div>
+              <img
+                src="#"
+                alt="Vista de barricas de madera en una bodega"
+              />
+              <!-- Foto de Michel Meuleman: https://www.pexels.com/es-es/foto/botellas-de-madera-fondo-de-pantalla-sotano-5690802/ -->
+            </div>
+          </div>
+          <button>
+            <span></span>
+            <span>Previous</span>
+          </button>
+          <button>
+            <span></span>
+            <span>Next</span>
+          </button>
+        </div>
+
+        <div class="max-w-[65ch]">
+          <p>
+            Hoy el mercado ofrece nuevos retos a la cocina tradicional vasca, ya
+            que la globalización permite la entrada de nuevos ingredientes y
+            técnicas culinarias. ¿Estaremos definiendo la nueva cocina
+            tradicional vasca del futuro?
+          </p>
+        </div>
+      </article>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="../assets/scripts/main.js"></script>
+
+    <!-- do not remove this line! -->
+  </body>
 </html>
