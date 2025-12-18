@@ -16,6 +16,9 @@ console.log ('Hola! Este es el archivo main.js');
 const buttonPrev = document.getElementById('slide-arrow-prev');
 const buttonNext = document.getElementById('slide-arrow-next');
 const carouselWrapper = document.getElementById('carousel-wrapper');
+
+if (carouselWrapper && buttonPrev && buttonNext) {
+
 const images = Array.from(carouselWrapper.querySelectorAll('img'));
 
 
@@ -66,3 +69,4 @@ buttonPrev.addEventListener('click', () => {
         images[newIndex].classList.remove('translate-x-0','transition', 'duration-500', 'ease-in-out');
     }, 500);    
 });
+}
