@@ -1,15 +1,293 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="../assets/styles/main.scss" />
     <!-- do not remove this line! -->
-    <title>Document</title>
-</head>
-<body>
-    <h1>Speakers</h1>
+    <title>Fogonazo! Speakers</title>
+  </head>
+
+  <body>
+    <!-- <include src="./views/header.html"></include> -->
+    <main>
+      <h1>Speakers</h1>
+      <div>
+        <section>
+          <picture>
+            <source
+              srcset="
+                ../assets/images/maria-lopez-500.webp   500w,
+                ../assets/images/maria-lopez-768.webp   768w,
+                ../assets/images/maria-lopez-1024.webp 1024w
+              "
+              type="image/webp"
+            />
+            <img
+              src="../assets/images/maria-lopez-1024.jpg"
+              srcset="
+                ../assets/images/maria-lopez-500.jpg   500w,
+                ../assets/images/maria-lopez-768.jpg   768w,
+                ../assets/images/maria-lopez-1024.jpg 1024w
+              "
+              alt="Retrato de María López"
+            />
+            <!--Foto de Andrea Piacquadio: https://www.pexels.com/es-es/foto/close-up-retrato-foto-de-mujer-sonriente-en-top-rojo-posando-delante-de-un-fondo-blanco-3762952/ -->
+          </picture>
+          <div>
+            <h3>María López (Andalucía)</h3>
+            <p>
+              Cocinera apasionada por la cocina de cuchara, defensora del
+              recetario tradicional andaluz.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <picture>
+            <source
+              srcset="
+                ../assets/images/iker-etxeberria-500.webp   500w,
+                ../assets/images/iker-etxeberria-768.webp   768w,
+                ../assets/images/iker-etxeberria-1024.webp 1024w
+              "
+              type="image/webp"
+            />
+            <img
+              src="../assets/images/iker-etxeberria-1024.jpg"
+              srcset="
+                ../assets/images/iker-etxeberria-500.jpg   500w,
+                ../assets/images/iker-etxeberria-768.jpg   768w,
+                ../assets/images/iker-etxeberria-1024.jpg 1024w
+              "
+              alt="Retrato de Iker Etxeberria"
+            />
+            <!-- Foto de Pavel Danilyuk: https://www.pexels.com/es-es/foto/hombre-persona-cara-enfrentarse-6593577/ -->
+          </picture>
+
+          <div>
+            <h3>Iker Etxeberria (País Vasco)</h3>
+            <p>
+              Especialista en parrilla y producto de temporada, amante de los
+              sabores intensos del norte.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <picture>
+            <source
+              srcset="
+                ../assets/images/xose-pereira-500.webp   500w,
+                ../assets/images/xose-pereira-768.webp   768w,
+                ../assets/images/xose-pereira-1024.webp 1024w
+              "
+              type="image/webp"
+            />
+            <img
+              src="../assets/images/xose-pereira-1024.jpg"
+              srcset="
+                ../assets/images/xose-pereira-500.jpg   500w,
+                ../assets/images/xose-pereira-768.jpg   768w,
+                ../assets/images/xose-pereira-1024.jpg 1024w
+              "
+              alt="Retrato de Xose Pereira"
+            />
+            <!-- Foto de Andrea Piacquadio: https://www.pexels.com/es-es/foto/hombre-en-camisa-roja-con-botones-3777943/ -->
+          </picture>
+          <div>
+            <h3>Xose Pereira (Galicia)</h3>
+            <p>
+              Maestro en pescados y mariscos, transmite la esencia atlántica en
+              cada uno de sus platos.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <picture>
+            <source
+              srcset="
+                ../assets/images/nuria-ferrer-500.webp   500w,
+                ../assets/images/nuria-ferrer-768.webp   768w,
+                ../assets/images/nuria-ferrer-1024.webp 1024w
+              "
+              type="image/webp"
+            />
+            <img
+              src="../assets/images/nuria-ferrer-1024.jpg"
+              srcset="
+                ../assets/images/nuria-ferrer-500.jpg   500w,
+                ../assets/images/nuria-ferrer-768.jpg   768w,
+                ../assets/images/nuria-ferrer-1024.jpg 1024w
+              "
+              alt="Retrato de Núria Ferrer"
+            />
+            <!--Foto de Andrea Piacquadio: https://www.pexels.com/es-es/foto/close-up-retrato-foto-de-mujer-sonriente-en-top-rojo-posando-delante-de-un-fondo-blanco-3762952/ -->
+          </picture>
+          <div>
+            <h3>Núria Ferrer (Cataluña)</h3>
+            <p>
+              Explora la cocina catalana clásica con una mirada actual,
+              respetando técnicas y sabores originales.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <picture>
+            <source
+              srcset="
+                ../assets/images/jean-petit-500.webp   500w,
+                ../assets/images/jean-petit-768.webp   768w,
+                ../assets/images/jean-petit-1024.webp 1024w
+              "
+              type="image/webp"
+            />
+            <img
+              src="../assets/images/jean-petit-1024.jpg"
+              srcset="
+                ../assets/images/jean-petit-500.jpg   500w,
+                ../assets/images/jean-petit-768.jpg   768w,
+                ../assets/images/jean-petit-1024.jpg 1024w
+              "
+              alt="Retrato de Jean Petit"
+            />
+            <!-- Foto de Nicholas Swatz: https://www.pexels.com/es-es/foto/hombre-persona-cara-enfrentarse-2770596/ -->
+          </picture>
+          <div>   
+            <h3>Jean Petit (Francia)</h3>
+            <p>
+              Chef formado en bistrós parisinos, enamorado de las salsas, fondos
+              y cocina lenta tradicional.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <picture>
+            <source
+              srcset="
+                ../assets/images/lucia-bianchi-500.webp   500w,
+                ../assets/images/lucia-bianchi-768.webp   768w,
+                ../assets/images/lucia-bianchi-1024.webp 1024w
+              "
+              type="image/webp"
+            />
+            <img
+              src="../assets/images/lucia-bianchi-1024.jpg"
+              srcset="
+                ../assets/images/lucia-bianchi-500.jpg   500w,
+                ../assets/images/lucia-bianchi-768.jpg   768w,
+                ../assets/images/lucia-bianchi-1024.jpg 1024w
+              "
+              alt="Retrato de Lucía Bianchi"
+            />
+            <!-- Foto de cottonbro studio: https://www.pexels.com/es-es/foto/mujer-en-camisa-a-cuadros-en-blanco-y-negro-5822227/ -->
+          </picture>
+          <div>
+            <h3>Lucia Bianchi (Italia)</h3>
+            <p>
+              Defensora de la cucina povera, experta en pastas frescas y recetas
+              heredadas de su nonna.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <h5>
+          Si estás interesado en recibir las últimas noticias, apúntate a
+          nuestra newsletter.
+        </h5>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#newsletterModal"
+          data-bs-whatever="@mdo"
+        >
+          newsletter
+        </button>
+
+        <!-- Modal -->
+        <div
+          id="newsletterModal"
+          tabindex="-1"
+          aria-labelledby="newsletterModalLabel"
+          aria-hidden="true"
+        >
+          <div>
+            <div>
+              <div>
+                <h5id="newsletterModalLabel">
+                  ¡Sí! Quiero recibir la newsletter
+                </h5>
+                <button
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div>
+                <form id="newsletterForm" novalidate>
+                  <div>
+                    <label for="email">Tu email:</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="tucorreo@ejemplo.com"
+                      required
+                    />
+                    <div>
+                      Por favor, introduce un email válido.
+                    </div>
+                  </div>
+                  <div>
+                    <label for="email2"
+                      >Repite tu email:</label
+                    >
+                    <input
+                      type="email"
+                      id="email2"
+                      name="email2"
+                      placeholder="tucorreo@ejemplo.com"
+                      required
+                    />
+                    <div id="email2-feedback">
+                      Por favor, repite tu email.
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+                <button
+                  type="submit"
+                  form="newsletterForm"
+                >
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <include src="./views/footer.html"></include>
     <script type="module" src="../assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
-</body>
+  </body>
 </html>
