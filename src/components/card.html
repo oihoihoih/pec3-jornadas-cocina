@@ -1,22 +1,13 @@
 <section class="bg-white rounded-2xl overflow-hidden max-w-sm mx-auto">
     <picture >
-        <source srcset="
-                ../assets/images/maria-lopez-500.webp   500w,
-                ../assets/images/maria-lopez-768.webp   768w,
-                ../assets/images/maria-lopez-1024.webp 1024w
-              " type="image/webp" />
-        <img class="mask-radial-farthest-corner" src="../assets/images/maria-lopez-1024.jpg" srcset="
-                ../assets/images/maria-lopez-500.jpg   500w,
-                ../assets/images/maria-lopez-768.jpg   768w,
-                ../assets/images/maria-lopez-1024.jpg 1024w
-              " alt="Retrato de María López" />
-        <!--Foto de Andrea Piacquadio: https://www.pexels.com/es-es/foto/close-up-retrato-foto-de-mujer-sonriente-en-top-rojo-posando-delante-de-un-fondo-blanco-3762952/ -->
+       <source srcset="{{ imgWebpSrcset }}" type="image/webp" />
+        <source srcset="{{ imgJpgSrcset }}" type="image/jpeg" />
+        <img class="mask-radial-farthest-corner" src="{{ img }}" />
+               
+
     </picture>
     <div class="p-4">
-        <h3 class="text-2xl mb-4 font-medium">María López (Andalucía)</h3>
-        <p>
-            Cocinera apasionada por la cocina de cuchara, defensora del
-            recetario tradicional andaluz.
-        </p>
+        <h3 class="text-2xl mb-4 font-medium">{{ name }}</h3>
+        <p> {{ description }} </p>
     </div>
 </section>
