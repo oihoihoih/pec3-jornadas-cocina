@@ -84,9 +84,7 @@
         Si estás interesado en recibir las últimas noticias, apúntate a
         nuestra newsletter.
       </h5>
-      <button type="button" data-bs-toggle="modal" data-bs-target="#newsletterModal" data-bs-whatever="@mdo">
-        newsletter
-      </button>
+      <include src="./components/button.html" locals='{"buttonText":"newsletter"}'></include>
 
       <!-- Modal -->
       <div id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
@@ -95,8 +93,9 @@
             <div>
               <h5id="newsletterModalLabel">
                 ¡Sí! Quiero recibir la newsletter
-                </h5>
-                <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              </h5>
+              <!-- TODO: ver qué ha pasado con este botón. Mirar la referencia anterior -->
+              <include src="./components/button.html" locals='{"buttonText":"Cerrar"}'></include>
             </div>
             <div>
               <form id="newsletterForm" novalidate>
