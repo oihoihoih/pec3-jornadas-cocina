@@ -18,7 +18,7 @@
   <!-- <include src="./views/header.html"></include> -->
   <main class="bg-xlight text-black  px-24">
     <h1 class="text-4xl text-center font-extrabold uppercase tracking-tighter">Speakers</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 gap-x-8 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-x-8 py-8">
 
       <!-- TODO: MIRAR PORQUÉ UTILIZA SIEMPRE LA IMAGEN MÁS GRANDE -->
       <include src="./components/card.html" locals='{
@@ -79,8 +79,8 @@
       </include>
     </div>
 
-    <footer>
-      <h5>
+    <footer class="flex flex-col items-center gap-8">
+      <h5 class="text-xl font-normal">
         Si estás interesado en recibir las últimas noticias, apúntate a
         nuestra newsletter.
       </h5>
@@ -129,6 +129,7 @@
       </div>
     </footer>
   </main>
+
   <include src="./views/footer.html"></include>
   <script type="module" src="../assets/scripts/main.js"></script>
   <!-- do not remove this line! -->
