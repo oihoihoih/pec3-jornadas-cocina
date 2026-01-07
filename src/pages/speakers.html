@@ -84,7 +84,11 @@
         Si estás interesado en recibir las últimas noticias, apúntate a
         nuestra newsletter.
       </h5>
-      <include src="./components/button.html" locals='{"buttonText":"newsletter"}'></include>
+      <button type="button" class="cursor-pointer uppercase border border-black rounded-md py-3 px-8 hover:bg-black hover:text-white"
+data-bs-dismiss="modal" aria-label="Close" >
+    Newsletter
+</button>
+     
 
       <!-- Modal -->
       <div class="w-full md:max-w-3/4 lg:max-w-1/2" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
@@ -131,7 +135,8 @@
                 </div>
               </form>
             </div>
-            <div>
+
+            <div class="p-4 flex flex-row border-t border-grey-300 justify-end gap-4">
               <button type="button" data-bs-dismiss="modal">
                 Cancelar
               </button>
