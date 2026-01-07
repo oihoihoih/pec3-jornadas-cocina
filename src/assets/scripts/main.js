@@ -12,7 +12,7 @@
 
 console.log ('Hola! Este es el archivo main.js');
 
-
+// Carousel functionality
 const buttonPrev = document.getElementById('slide-arrow-prev');
 const buttonNext = document.getElementById('slide-arrow-next');
 const carouselWrapper = document.getElementById('carousel-wrapper');
@@ -70,3 +70,18 @@ buttonPrev.addEventListener('click', () => {
     }, 500);    
 });
 }
+
+// Modal functionality
+
+const closeButton = document.getElementById('closeModalButton');
+const openButton = document.getElementById('openModalButton');
+const modalContainer = document.getElementById('nlModalContainer');
+const modal = document.getElementById('nlModal');
+
+closeButton.addEventListener('click', () => {
+    modalContainer.classList.add('hidden');
+});
+
+openButton.addEventListener('click', () => {
+    modalContainer.classList.remove('hidden');
+}); 
