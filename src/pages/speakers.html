@@ -16,9 +16,9 @@
 
 <body>
   <!-- <include src="./views/header.html"></include> -->
-  <main class="bg-xlight text-black  px-24">
+  <main class="bg-xlight text-black">
     <h1 class="text-4xl text-center font-extrabold uppercase tracking-tighter">Speakers</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-x-8 py-8">
+    <div class="px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-x-8 py-8">
 
       <!-- TODO: MIRAR PORQUÉ UTILIZA SIEMPRE LA IMAGEN MÁS GRANDE -->
       <include src="./components/card.html" locals='{
@@ -84,30 +84,32 @@
         Si estás interesado en recibir las últimas noticias, apúntate a
         nuestra newsletter.
       </h5>
-      <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterModal" aria-label="Open newsletter modal">
+      <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterModal"
+        aria-label="Open newsletter modal">
         Newsletter
       </button>
 
 
       <!-- Modal -->
-      <div class="w-full md:max-w-3/4 lg:max-w-1/2" id="newsletterModal" tabindex="-1"
-        aria-labelledby="newsletterModalLabel" aria-hidden="true">
-        <div class="mx-auto">
-          <div class="bg-white rounded-2xl">
-            <div class="p-4 flex justify-between border-b border-grey-300">
-              <h5 id="newsletterModalLabel">
-                ¡Sí! Quiero recibir la newsletter
-              </h5>
+      <!-- Overlay with blend -->
+      <div class="fixed inset-0 bg-black mix-blend-multiply w-full z-50"> </div>
 
-              <button type="button" class="cursor-pointer uppercase text-grey-400 hover:text-grey"
-                data-bs-dismiss="modal" aria-label="Close">X
-              </button>
-            </div>
+      <div class="fixed inset-0 flex items-center justify-center z-60 shadow-sm" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="bg-white rounded-2xl w-full mx-4 md:max-w-3/4 lg:max-w-1/2">
+          <div class="p-4 flex justify-between border-b border-grey-300">
+            <h5 id="newsletterModalLabel">
+              ¡Sí! Quiero recibir la newsletter
+            </h5>
 
-            <div class="p-4">
-              <form id="newsletterForm" novalidate>
-                <div class="mb-4 flex flex-col">
-                  <include src="./components/input.html" locals='{
+            <button type="button" class="cursor-pointer uppercase text-grey-400 hover:text-grey" data-bs-dismiss="modal"
+              aria-label="Close">X
+            </button>
+          </div>
+
+          <div class="p-4">
+            <form id="newsletterForm" novalidate>
+              <div class="mb-4 flex flex-col">
+                <include src="./components/input.html" locals='{
                     "labelFor":"email",
                     "labelText":"Tu email",
                     "inputType":"email",
@@ -116,10 +118,10 @@
                     "placeholder":"tucorreo@ejemplo.com",
                     "feedbackText":"Por favor, introduce un email válido."
                   }'></include>
-                </div>
+              </div>
 
-                <div class="mb-4 flex flex-col">
-                  <include src="./components/input.html" locals='{
+              <div class="mb-4 flex flex-col">
+                <include src="./components/input.html" locals='{
                     "labelFor": "email2",
                     "labelText": "Confirma tu email",
                     "inputType": "email",
@@ -128,18 +130,17 @@
                     "placeholder": "tucorreo@ejemplo.com",
                     "feedbackText": "Los emails no coinciden."
                   }'></include>
-                </div>
-              </form>
-            </div>
+              </div>
+            </form>
+          </div>
 
-            <div class="p-4 flex flex-row border-t border-grey-300 justify-end gap-4">
-              <button class="btn-cancel" type="button" data-bs-dismiss="modal">
-                Cancelar
-              </button>
-              <button class="btn-success" type="submit" form="newsletterForm">
-                Enviar
-              </button>
-            </div>
+          <div class="p-4 flex flex-row border-t border-grey-300 justify-end gap-4">
+            <button class="btn-cancel" type="button" data-bs-dismiss="modal">
+              Cancelar
+            </button>
+            <button class="btn-success" type="submit" form="newsletterForm">
+              Enviar
+            </button>
           </div>
         </div>
       </div>
