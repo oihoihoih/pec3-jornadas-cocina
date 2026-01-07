@@ -1,11 +1,12 @@
-<nav>
-  <div>
-    <a href="/src/index.html">
+<nav class="mt-4 px-20 py-2 ">
+  <div class="flex flex-col md:flex-row justify-between items-center">
+    <a class="flex flex-row items-center" href="/src/index.html">
       <img
+        class="w-8 mr-8"
         src="/src/assets/images/logo-fogonazo.svg"
         alt="Logo del sitio"
       />
-      <span>Fogonazo!</span>
+      <span class="uppercase font-black text-4xl text-regular tracking-[-4px]">Fogonazo!</span>
     </a>
 
     <button
@@ -19,12 +20,12 @@
       <span></span>
     </button>
 
-    <div id="navbarNav">
-      <ul>
-        <li>
+    <div id="navbarNav" class="w-full mt-4 md:mt-0 md:w-auto">
+      <ul class="flex flex-row justify-between gap-4">
+        <li class="uppercase font-black text-2xl hover:text-regular">
           <a href="/src/pages/speakers.html">Speakers</a>
         </li>
-        <li>
+        <li class="uppercase font-black text-2xl hover:text-regular">
           <a href="/src/pages/blog.html">Blog</a>
         </li>
       </ul>
