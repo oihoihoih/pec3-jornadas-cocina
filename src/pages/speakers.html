@@ -85,7 +85,7 @@
         Si estás interesado en recibir las últimas noticias, apúntate a
         nuestra newsletter.
       </h5>
-      <button id="openModalButton" type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterModal"
+      <button id="openModalButton" type="button" class="btn-primary"
         aria-label="Open newsletter modal">
         Newsletter
       </button>
@@ -104,7 +104,7 @@
               </h5>
 
               <button id="closeModalButton" type="button" class="cursor-pointer uppercase text-grey-400 hover:text-grey"
-                data-bs-dismiss="modal" aria-label="Close">X
+              aria-label="Close">X
               </button>
             </div>
 
@@ -137,10 +137,10 @@
             </div>
 
             <div class="p-4 flex flex-col border-t border-grey-300 justify-end gap-4 sm:flex-row">
-              <button class="btn-cancel" type="button" data-bs-dismiss="modal">
+              <button id="cancelModalButton" class="btn-cancel" type="button">
                 Cancelar
               </button>
-              <button class="btn-success" type="submit" form="newsletterForm">
+              <button id="acceptModalButton" class="btn-success" type="submit" form="newsletterForm">
                 Enviar
               </button>
             </div>

@@ -77,8 +77,18 @@ const closeButton = document.getElementById('closeModalButton');
 const openButton = document.getElementById('openModalButton');
 const modalContainer = document.getElementById('nlModalContainer');
 const modal = document.getElementById('nlModal');
+const cancelModalButton = document.getElementById('cancelModalButton');
+const acceptModalButton = document.getElementById('acceptModalButton');
 
 closeButton.addEventListener('click', () => {
+    modalContainer.classList.add('hidden');
+});
+
+cancelModalButton.addEventListener('click', () => {
+    modalContainer.classList.add('hidden');
+});
+
+acceptModalButton.addEventListener('click', () => {
     modalContainer.classList.add('hidden');
 });
 
