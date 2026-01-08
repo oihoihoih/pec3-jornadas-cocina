@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cooking Contest 2024</title>
+  <meta name="description" content="Cooking Contest 2024 – Recipes and contestants" />
+  <style>
+    :root {
+      --color-primary: #1f2933;
+      --color-secondary: #6b7280;
+      --color-accent: #c2410c;
+      --color-bg: #ffffff;
+      --color-muted: #f3f4f6;
+      --max-width: 1200px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--color-primary);
+      background-color: var(--color-bg);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin-inline: auto;
+      padding: 1rem;
+    }
+
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      font-weight: 500;
+    }
+
+    main {
+      padding-block: 2rem;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      font-size: 1.75rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    article {
+      background-color: var(--color-muted);
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+
+    article .content {
+      padding: 1rem;
+    }
+
+    .recipe-title {
+      font-size: 1.25rem;
+      margin: 0.5rem 0;
+    }
+
+    .author {
+      color: var(--color-secondary);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: var(--color-muted);
+      margin-top: 3rem;
+    }
+
+    footer nav ul {
+      flex-wrap: wrap;
+    }
+
+    .footer-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    @media (min-width: 768px) {
+      .site-header {
+        flex-wrap: nowrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container site-header">
+      <p class="logo" aria-label="Cooking contest home"><strong>Cooking contest 2024 edition</strong></p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#contestants">Contestants</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <h1>Recipes</h1>
+    <section id="recipes" aria-labelledby="recipes-heading">
+      <h2 id="recipes-heading">The recipes</h2>
+      <p>These are the recipes of the best contestants</p>
+
+      <div class="grid grid-3">
+        <article aria-labelledby="recipe-1-title">
+          <img src="https://images.unsplash.com/photo-1605475129364-93f1b3a6b8a8" alt="Cajun seafood pasta with shrimp and spices" />
+          <div class="content">
+            <h3 id="recipe-1-title" class="recipe-title">Cajun seafood pasta</h3>
+            <p class="author">John Cooper</p>
+            <p>This Cajun seafood pasta recipe is a <strong>hot one</strong>, but delicious!</p>
+          </div>
+        </article>
+
+        <article aria-labelledby="recipe-2-title">
+          <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2" alt="Cedar planked salmon grilled to perfection" />
+          <div class="content">
+            <h3 id="recipe-2-title" class="recipe-title">Cedar planked salmon</h3>
+            <p class="author">Marta Alonso</p>
+            <p>Salmon reaches its full potential when it's grilled on top of a cedar plank.</p>
+          </div>
+        </article>
+
+        <article aria-labelledby="recipe-3-title">
+          <img src="https://images.unsplash.com/photo-1604908177522-4026c6c5c7a9" alt="Poulet au vinaigre served in a rustic pan" />
+          <div class="content">
+            <h3 id="recipe-3-title" class="recipe-title">Poulet au vinaigre</h3>
+            <p class="author">Mary Ann Stones</p>
+            <p>Irresistible chicken, cooked with vinegar.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contestants" aria-labelledby="contestants-heading">
+      <h2 id="contestants-heading">Contestants</h2>
+      <ul>
+        <li>John Cooper</li>
+        <li>Marta Alonso</li>
+        <li>Mary Ann Stones</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <section aria-labelledby="footer-recipes">
+        <p id="footer-recipes" class="footer-title">Recipes</p>
+        <ul>
+          <li>Cajun seafood pasta</li>
+          <li>Cedar planked salmon</li>
+          <li>Poulet au vinaigre</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="footer-contestants">
+        <p id="footer-contestants" class="footer-title">Contestants</p>
+        <ul>
+          <li>John Cooper</li>
+          <li>Marta Alonso</li>
+          <li>Mary Ann Stones</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="footer-editions">
+        <p id="footer-editions" class="footer-title">Contest editions</p>
+        <ul>
+          <li>2024</li>
+          <li>2023</li>
+          <li>2022</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <p>Images from Unsplash, used under the Unsplash License.</p>
+    </div>
+  </footer>
+</body>
+</html>
