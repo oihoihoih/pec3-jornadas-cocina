@@ -10,8 +10,6 @@
  * Write any other JavaScript below
  */
 
-console.log ('Hola! Este es el archivo main.js');
-
 // Carousel functionality
 const buttonPrev = document.getElementById('slide-arrow-prev');
 const buttonNext = document.getElementById('slide-arrow-next');
@@ -73,6 +71,7 @@ buttonPrev.addEventListener('click', () => {
 
 // Modal functionality
 
+if (window.location.pathname.includes('speakers')){
 const closeButton = document.getElementById('closeModalButton');
 const openButton = document.getElementById('openModalButton');
 const modalContainer = document.getElementById('nlModalContainer');
@@ -94,4 +93,4 @@ acceptModalButton.addEventListener('click', () => {
 
 openButton.addEventListener('click', () => {
     modalContainer.classList.remove('hidden');
-}); 
+}); }
