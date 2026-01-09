@@ -3,5 +3,5 @@
  * see commented examples below
  */
 
- @import "tailwindcss/index.css";
- @import "./theme.scss";
+ @use "tailwindcss/index.css";
+ @use "./theme.scss";
