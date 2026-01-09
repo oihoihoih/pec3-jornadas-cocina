@@ -16,7 +16,7 @@
 
 <body class="bg-xlight text-black">
   <include src="./views/header.html"></include>
-  
+
   <main class="speakers mb-8">
     <h1 class="text-4xl text-center font-extrabold uppercase tracking-tighter">Speakers</h1>
     <div class="px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-x-8 py-8">
@@ -26,6 +26,7 @@
         "imgWebpSrcset":"../assets/images/maria-lopez-500.webp 500w, ../assets/images/maria-lopez-768.webp 768w, ../assets/images/maria-lopez-1024.webp 1024w",
         "imgJpgSrcset":"../assets/images/maria-lopez-500.jpg 500w, ../assets/images/maria-lopez-768.jpg 768w, ../assets/images/maria-lopez-1024.jpg 1024w",
         "img":"../assets/images/maria-lopez-1024.jpg", 
+        "alt": "Retrato de María López, cocinera joven y sonriente",
         "name": "María López (Andalucía)", 
         "description": "Cocinera apasionada por la cocina de cuchara, defensora del recetario tradicional andaluz."}'>
       </include>
@@ -34,6 +35,7 @@
         "imgWebpSrcset":" ../assets/images/iker-etxeberria-500.webp 500w, ../assets/images/iker-etxeberria-768.webp 768w,../assets/images/iker-etxeberria-1024.webp 1024w",
         "imgJpgSrcset":" ../assets/images/iker-etxeberria-500.jpg 500w, ../assets/images/iker-etxeberria-768.jpg 768w, ../assets/images/iker-etxeberria-1024.jpg 1024w",
         "img":"../assets/images/iker-etxeberria-1024.jpg", 
+        "alt": "Retrato de Iker Etxeberria, joven cocinero con gorra",
         "name": "Iker Etxeberria (País Vasco)", 
         "description": "Especialista en parrilla y producto de temporada, amante de los sabores intensos del norte."}'>
         <!--Foto de Andrea Piacquadio: https://www.pexels.com/es-es/foto/close-up-retrato-foto-de-mujer-sonriente-en-top-rojo-posando-delante-de-un-fondo-blanco-3762952/ -->
@@ -43,6 +45,7 @@
         "imgWebpSrcset":" ../assets/images/xose-pereira-500.webp 500w, ../assets/images/xose-pereira-768.webp 768w, ../assets/images/xose-pereira-1024.webp 1024w",
         "imgJpgSrcset":"../assets/images/xose-pereira-500.jpg 500w, ../assets/images/xose-pereira-768.jpg 768w, ../assets/images/xose-pereira-1024.jpg 1024w",
         "img":"../assets/images/xose-pereira-1024.jpg",
+        "alt": "Retrato de Xose Pereira, maestro en pescados y mariscos",
         "name": "Xose Pereira (Galicia)",
         "description": "Maestro en pescados y mariscos, transmite la esencia atlántica en cada uno de sus platos."
       }'>
@@ -52,6 +55,7 @@
         "imgWebpSrcset":" ../assets/images/nuria-ferrer-500.webp 500w, ../assets/images/nuria-ferrer-768.webp 768w, ../assets/images/nuria-ferrer-1024.webp 1024w",
         "imgJpgSrcset":"../assets/images/nuria-ferrer-500.jpg 500w, ../assets/images/nuria-ferrer-768.jpg 768w, ../assets/images/nuria-ferrer-1024.jpg 1024w",
         "img":"../assets/images/nuria-ferrer-1024.jpg",
+        "alt": "Retrato de Núria Ferrer en el exterior",
         "name": "Núria Ferrer (Cataluña)",
         "description": "Explora la cocina catalana clásica con una mirada actual, respetando técnicas y sabores originales."
       }'>
@@ -62,6 +66,7 @@
         "imgWebpSrcset":"../assets/images/jean-petit-500.webp 500w, ../assets/images/jean-petit-768.webp 768w, ../assets/images/jean-petit-1024.webp 1024w",
         "imgJpgSrcset":"../assets/images/jean-petit-500.jpg 500w, ../assets/images/jean-petit-768.jpg 768w, ../assets/images/jean-petit-1024.jpg 1024w",
         "img":"../assets/images/jean-petit-1024.jpg",
+        "alt": "Retrato de Jean Petit, chef francés con camiseta blanca",
         "name": "Jean Petit (Francia)",
         "description": "Chef formado en bistrós parisinos, enamorado de las salsas, fondos y cocina lenta tradicional."
       }'>
@@ -72,6 +77,7 @@
         "imgWebpSrcset":"../assets/images/lucia-bianchi-500.webp 500w, ../assets/images/lucia-bianchi-768.webp 768w, ../assets/images/lucia-bianchi-1024.webp 1024w",
         "imgJpgSrcset":"../assets/images/lucia-bianchi-500.jpg 500w, ../assets/images/lucia-bianchi-768.jpg 768w, ../assets/images/lucia-bianchi-1024.jpg 1024w",
         "img":"../assets/images/lucia-bianchi-1024.jpg",
+        "alt": "Retrato de Lucia Bianchi, chef italiana fotografiada en un rayo de luz",
         "name": "Lucia Bianchi (Italia)",
         "description": "Defensora de la cucina povera, experta en pastas frescas y recetas heredadas de su nonna."
       }'>
@@ -85,8 +91,7 @@
         Si estás interesado en recibir las últimas noticias, apúntate a
         nuestra newsletter.
       </h5>
-      <button id="openModalButton" type="button" class="btn-primary"
-        aria-label="Open newsletter modal">
+      <button id="openModalButton" type="button" class="btn-primary" aria-label="Open newsletter modal">
         Newsletter
       </button>
 
@@ -104,7 +109,7 @@
               </h5>
 
               <button id="closeModalButton" type="button" class="cursor-pointer uppercase text-grey-400 hover:text-grey"
-              aria-label="Close">X
+                aria-label="Close">X
               </button>
             </div>
 
