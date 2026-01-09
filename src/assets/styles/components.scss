@@ -1,25 +1,23 @@
-@layer components {
-    .blog-post__hero {
-        @apply flex justify-center items-center relative w-full h-[50cqb]
-    }
+.blog-post__hero {
+  @apply flex justify-center items-center relative w-full h-[50cqb];
+}
 
-    .blog-post__heading {
-        @apply text-5xl font-black uppercase text-accent leading-10 tracking-tighter ;
-    }
+.blog-post__heading {
+  @apply text-5xl font-black uppercase text-accent leading-10 tracking-tighter;
+}
 
-    .blockquote {
-        @apply border-l-4 border-accent pl-4 min-w-[15ch] flex flex-col gap-4;
-    }
+.blockquote {
+  @apply border-l-4 border-accent pl-4 min-w-[15ch] flex flex-col gap-4;
+}
 
-    .btn-primary {
-        @apply cursor-pointer uppercase border border-black rounded-md py-3 px-8 hover:bg-black hover:text-white;
-    }
+.btn-primary {
+  @apply cursor-pointer uppercase border border-black rounded-md py-3 px-8 hover:bg-black hover:text-white;
+}
 
-    .btn-success {
-        @apply cursor-pointer border border-complementary text-complementary rounded-md py-2 px-4 hover:bg-complementary hover:text-white;
-    }
+.btn-success {
+  @apply cursor-pointer border border-complementary text-complementary rounded-md py-2 px-4 hover:bg-complementary hover:text-white;
+}
 
-    .btn-cancel {
-        @apply cursor-pointer border border-grey-500 text-gray-500 rounded-md py-2 px-4 hover:bg-gray-300 hover:border-grey-300;
-    }
+.btn-cancel {
+  @apply cursor-pointer border border-grey-500 text-gray-500 rounded-md py-2 px-4 hover:bg-gray-300 hover:border-grey-300;
 }

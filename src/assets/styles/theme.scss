@@ -25,7 +25,6 @@
     --color-grey-100: #f8f9fa;
 }
 
-/* TODO: Adaptar colores a display-p3 */
 @supports (color: color(display-p3 1 1 1)) {
   @theme {
     --color-accent: color(display-p3 0.99 0.3 0.11)
