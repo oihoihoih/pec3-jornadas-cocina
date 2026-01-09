@@ -12,7 +12,7 @@
     --color-complementary: #5268ff;
     --color-info: #a8b3ff;
     --color-medium: #fc7851;
-    --color-regular: #fc3e00;
+    --color-accent: #fc3e00;
     --color-light: #fcb1a9;
     --color-xlight: #fcefa9;
     --color-white: #fffaf7;
@@ -28,6 +28,6 @@
 /* TODO: Adaptar colores a display-p3 */
 @supports (color: color(display-p3 1 1 1)) {
   @theme {
-    --color-regular: color(display-p3 0.99 0.3 0.11)
+    --color-accent: color(display-p3 0.99 0.3 0.11)
   }
 }

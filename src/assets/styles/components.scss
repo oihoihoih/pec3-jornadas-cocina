@@ -4,11 +4,11 @@
     }
 
     .blog-post__heading {
-        @apply text-5xl font-black uppercase text-regular leading-10 tracking-tighter ;
+        @apply text-5xl font-black uppercase text-accent leading-10 tracking-tighter ;
     }
 
     .blockquote {
-        @apply border-l-4 border-regular pl-4 min-w-[15ch] flex flex-col gap-4;
+        @apply border-l-4 border-accent pl-4 min-w-[15ch] flex flex-col gap-4;
     }
 
     .btn-primary {
