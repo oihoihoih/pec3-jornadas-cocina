@@ -91,9 +91,12 @@
         Si estás interesado en recibir las últimas noticias, apúntate a
         nuestra newsletter.
       </h5>
-      <button id="openModalButton" type="button" class="btn-primary" aria-label="Open newsletter modal">
-        Newsletter
-      </button>
+      <include src="./components/button.html" locals='{
+        "buttonId":"openModalButton",
+        "buttonType":"button",
+        "buttonClass":"btn-primary",
+        "buttonText":"Newsletter"
+      }'></include>
 
 
       <!-- Modal -->
@@ -108,6 +111,7 @@
                 ¡Sí! Quiero recibir la newsletter
               </h5>
 
+              <!-- TODO: Ver cómo puedo adaptar el botón con icono y componente -->
               <button id="closeModalButton" type="button" class="cursor-pointer uppercase text-grey-400 hover:text-grey"
                 aria-label="Close">X
               </button>
@@ -143,12 +147,18 @@
             </div>
 
             <div class="p-4 flex flex-col border-t border-grey-300 justify-end gap-4 sm:flex-row">
-              <button id="cancelModalButton" class="btn-cancel" type="button">
-                Cancelar
-              </button>
-              <button id="acceptModalButton" class="btn-success" type="submit" form="newsletterForm">
-                Enviar
-              </button>
+              <include src="./components/button.html" locals='{
+                "buttonId":"cancelModalButton",
+                "buttonType":"button",
+                "buttonClass":"btn-cancel",
+                "buttonText":"Cancelar"
+              }'></include>
+              <include src="./components/button.html" locals='{
+                "buttonId":"acceptModalButton",
+                "buttonType":"submit",
+                "buttonClass":"btn-success",
+                "buttonText":"Enviar"
+              }'></include>
             </div>
           </div>
         </div>
