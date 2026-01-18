@@ -21,7 +21,6 @@
     <h1 class="text-4xl text-center font-extrabold uppercase tracking-tighter">Speakers</h1>
     <div class="px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-x-8 py-8">
 
-      <!-- TODO: MIRAR PORQUÉ UTILIZA SIEMPRE LA IMAGEN MÁS GRANDE -->
       <include src="./components/card.html" locals='{
         "imgWebpSrcset":"../assets/images/maria-lopez-500.webp 500w, ../assets/images/maria-lopez-768.webp 768w, ../assets/images/maria-lopez-1024.webp 1024w",
         "imgJpgSrcset":"../assets/images/maria-lopez-500.jpg 500w, ../assets/images/maria-lopez-768.jpg 768w, ../assets/images/maria-lopez-1024.jpg 1024w",
@@ -112,14 +111,12 @@
                 ¡Sí! Quiero recibir la newsletter
               </h5>
 
-              <!-- TODO: Ver cómo puedo adaptar el botón con icono y componente -->
               <button id="closeModalButton" type="button" class="cursor-pointer uppercase text-grey-400 hover:text-grey"
                 aria-label="Close">X
               </button>
             </div>
 
             <div class="p-4">
-              <!-- TODO: Validar emails -->
               <form id="newsletterForm" novalidate>
                 <div class="mb-4 flex flex-col">
                   <include src="./components/input.html" locals='{
